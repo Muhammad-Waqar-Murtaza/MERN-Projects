@@ -16,11 +16,16 @@ const app = express()
 //     next();
 // })
 
-app.use(cors({
-    origin: ["https://mern-projects-iota.vercel.app"],
-    methods: ["POST, GET"],
-    credentials: true
-}))
+// app.use(cors({
+//     origin: ["https://mern-projects-iota.vercel.app"],
+//     methods: ["POST, GET"],
+//     credentials: true
+// }))
+
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    next();
+  });
 
 app.use(express.json())
 connectDB()
