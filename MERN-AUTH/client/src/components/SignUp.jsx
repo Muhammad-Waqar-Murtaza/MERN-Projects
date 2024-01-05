@@ -13,7 +13,7 @@ const SignUp = ({toggle, setToggle}) => {
 
   const handleForm = async (e) => {
     e.preventDefault();
-    const URL = "http://localhost:3000/user/signup";
+    const URL = "https://form-auth-server.vercel.app/user/signup";
     try {
       const response = await axios.post(URL, user);
       console.log(response.data);
