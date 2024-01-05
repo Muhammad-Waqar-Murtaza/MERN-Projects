@@ -8,7 +8,6 @@ const corsMiddleware = require('./middlewares/corsMiddleware')
 const app = express()
 
 // middleware
-app.use(corsMiddleware)
 app.use(express.json())
 connectDB()
 
@@ -21,6 +20,7 @@ app.use('/user', userRoutes)
 
 // error middleware
 app.use(errorHandler)
+app.use(corsMiddleware)
 
 // connecting to database
 
