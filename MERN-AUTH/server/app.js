@@ -13,6 +13,9 @@ app.use(express.json())
 
 // app routes
 
+app.get("/", (req, res)=>{
+    res.send("app is running")
+})
 app.use('/user', userRoutes)
 
 // error middleware
