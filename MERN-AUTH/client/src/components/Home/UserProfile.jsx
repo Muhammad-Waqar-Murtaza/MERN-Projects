@@ -20,6 +20,7 @@ const UserProfile = () => {
         headers: {
           Authorization: `Bearer ${token}`,
         },
+        withCredentials: true
       });
       console.log(response.data);
       setData({

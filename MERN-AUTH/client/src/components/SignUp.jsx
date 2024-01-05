@@ -11,13 +11,11 @@ const SignUp = ({toggle, setToggle}) => {
     password: "",
   });
 
-  axios.defaults.withCredentials = true;
-
   const handleForm = async (e) => {
     e.preventDefault();
     const URL = "https://server-side-fawn-chi.vercel.app/user/signup";
     try {
-      const response = await axios.post(URL, user);
+      const response = await axios.post(URL, user, { withCredentials: true });
       console.log(response.data);
     } catch (err) {
       console.log(err);
