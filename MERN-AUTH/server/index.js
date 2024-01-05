@@ -9,7 +9,8 @@ const port = process.env.PORT || 3000
 
 // middleware
 const corsOptions = {
-    origin: 'https://server-side-fawn-chi.vercel.app/',
+    origin: 'https://server-side-fawn-chi.vercel.app',
+    methods: ["GET", "POST"],
     credentials: true,
   }
 
