@@ -16,11 +16,7 @@ const app = express()
 //     next();
 // })
 
-app.use(cors({
-    origin: ["https://mern-projects-iota.vercel.app"],
-    methods: ["POST, GET"],
-    credentials: true
-}))
+app.use(cors())
 
 app.use(express.json())
 connectDB()
