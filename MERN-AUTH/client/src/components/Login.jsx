@@ -13,7 +13,7 @@ const Login = ({toggle, setToggle, isAuth, setIsAuth, setToken}) => {
 
   const handleForm = async (e) => {
     e.preventDefault();
-    const URL = "https://form-auth-server.vercel.app/user/login";
+    const URL = "https://server-side-fawn-chi.vercel.app/user/login";
     try {
       const response = await axios.post(URL, user);
       console.log(response.data);

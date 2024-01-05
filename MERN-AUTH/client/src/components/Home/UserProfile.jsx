@@ -12,7 +12,7 @@ const UserProfile = () => {
 
   const token = localStorage.getItem("token");
   const profile = async () => {
-    const URL = "https://form-auth-server.vercel.app/user/profile";
+    const URL = "https://server-side-fawn-chi.vercel.app/user/profile";
     try {
       const response = await axios.get(URL, {
         headers: {
