@@ -9,7 +9,7 @@ const app = express()
 // middleware
 
 app.use(cors({
-    origin: ["https://mern-projects-iota.vercel.app/"],
+    origin: ["https://mern-projects-iota.vercel.app"],
     methods: ["POST, GET"],
     credentials: true
 }))
