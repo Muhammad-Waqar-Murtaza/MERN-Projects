@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    font-family: "poppins";
+}   
+
+.header-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    /* background-color: #2577FD; */
+  }
+  .logo{
+    font-size: 1.5rem;
+    color: black;
+  }
+  li{
+    display: inline-flex;
+    margin-right: 35px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+  }
+  
+
+.formWrapper{
+    background-color: white;
+    width: 300px;
+    border-radius: 5px;
+    padding: 40px;
+    padding-top: 20px;
+    box-shadow: 0 0 5px 0 grey;
+}
+
+.formTitle{
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.userForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.userForm input{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+.userForm button{
+    width: 320px;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    background-color: #2577FD;
+    border-radius: 3px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.userForm p{
+    font-size: 14px;
+}
+
+.login, .signup{
+    color: #2577FD;
+    text-decoration: none;
+}
+
+.loginWrapper, .signupWrapper{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.userForm input::placeholder{
+    font-family: poppins;
+}
+
+.userForm button{
+    margin-bottom: 10px;
+}
+
+.headerlinks a button{
+    border: 0;
+    outline: 0;
+    background-color: #2577FD;
+    padding: 6px 15px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    border-radius: 3px;
+}

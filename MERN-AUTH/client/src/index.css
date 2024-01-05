@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+  input{
+    width: 100%;
+    padding: 10px 20px;
+    outline: 0;
+    border: 0;
+    border: 1px solid #E5E6E9;
+  }
+  a:hover{
+    color: #2577FD;
+  }
+
+  .homeWrapper{
+    width: 600px;
+    background-color: white;
+    box-shadow: 0 0 5px 0 grey;
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px 0;
+    border-radius: 40px;
+    font-weight: 600;
+    line-height: 45px;
+}
+.logo{
+  font-weight: 500;
+}
+
+.errorWrapper, .profileWrapper{
+  margin: 50px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.error, .profile{
+  background-color: white;
+  box-shadow: 0 0 5px 0 grey;
+  text-align: center;
+  padding: 20px;
+  border-radius: 40px;
+  font-weight: 600;
+  width: 500px;
+  font-size: 30px;
+}
+
+
+
+@media screen and (max-width: 576px) {
+  .logo{
+    font-size: 16px;
+  }
+  .headerlinks a button{
+    font-size: 13px;
+  }
+  .formWrapper{
+    margin: 20px;
+  }
+  .userForm button{
+    width: 108%;
+  }
+  .formTitle{
+    font-size: 30px;
+  }
+  .userForm p{
+    font-size: 12px;
+  }
+  .header-wrap{
+    padding: 20px 20px;
+  }
+  .error, .profile{
+    font-size: 23px;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .formWrapper{
+    padding: 25px;
+  }
+  .userForm input{
+    padding: 10px;
+  }
+  .userForm input::placeholder{
+    font-size: 12px;
+  }
+  .formTitle{
+    font-size: 26px;
+  }
+  .userForm p{
+    display: none;
+  }
+  .userForm button{
+    font-size: 14px;
+    width: 110%;
+  }
+  .loginWrapper{
+    margin-top: 20px;
+  }
+  .logo{
+    font-size: 14px;
+  }
+  .headerlinks a button{
+    font-size: 12px;
+  }
+  .error, .profile{
+    font-size: 20px;
+  }
+}
