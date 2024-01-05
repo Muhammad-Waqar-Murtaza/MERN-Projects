@@ -1,5 +1,5 @@
 const express = require('express')
-const cors = require('cors')   
+const cors = require('cors')
 const { connectDB } = require('./database/database')
 const { userRoutes } = require('./routes/userRoutes')
 const { errorHandler } = require("./middlewares/errorMiddleware")
@@ -10,10 +10,11 @@ const app = express()
 
 app.use(cors())
 app.use(express.json())
+connectDB()
 
 // app routes
 
-app.get("/", (req, res)=>{
+app.get("/", (req, res) => {
     res.send("app is running")
 })
 app.use('/user', userRoutes)
@@ -23,8 +24,6 @@ app.use(errorHandler)
 
 // connecting to database
 
-connectDB().then(()=>{
-    app.listen(3000, async () => {
-        console.log("Database & Server connection established")
-    })
+app.listen(3000, async () => {
+    console.log("Database & Server connection established")
 })
