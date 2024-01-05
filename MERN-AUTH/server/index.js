@@ -9,7 +9,9 @@ const app = express()
 // middleware
 
 app.use(cors({
-    origin: ["https://form-auth-server.vercel.app"]
+    origin: ["https://form-auth-server.vercel.app"],
+    methods: ["POST", "GET"],
+    credentials: true
 }))
 app.use(express.json())
 connectDB()
