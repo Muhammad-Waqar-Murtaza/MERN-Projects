@@ -13,7 +13,7 @@ const SignUp = ({toggle, setToggle}) => {
 
   const handleForm = async (e) => {
     e.preventDefault();
-    const URL = "https://server-side-fawn-chi.vercel.app/user/signup";
+    const URL = "https://embarrassed-bedclothes-hen.cyclic.app/user/signup";
     try {
       const response = await axios.post(URL, user, { withCredentials: true });
       console.log(response.data);

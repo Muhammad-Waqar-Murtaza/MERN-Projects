@@ -14,7 +14,7 @@ const Login = ({toggle, setToggle, isAuth, setIsAuth, setToken}) => {
 
   const handleForm = async (e) => {
     e.preventDefault();
-    const URL = "https://server-side-fawn-chi.vercel.app/user/login";
+    const URL = "https://embarrassed-bedclothes-hen.cyclic.app/user/login";
     try {
       const response = await axios.post(URL, user, {withCredentials: true});
       console.log(response.data);

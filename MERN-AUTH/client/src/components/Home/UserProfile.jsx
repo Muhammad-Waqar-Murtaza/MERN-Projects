@@ -14,7 +14,7 @@ const UserProfile = () => {
 
   axios.defaults.withCredentials = true;
   const profile = async () => {
-    const URL = "https://server-side-fawn-chi.vercel.app/user/profile";
+    const URL = "https://embarrassed-bedclothes-hen.cyclic.app/user/profile";
     try {
       const response = await axios.get(URL, {
         headers: {
