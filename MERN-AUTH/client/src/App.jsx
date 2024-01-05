@@ -14,7 +14,6 @@ function App() {
   const [token, setToken] = useState(initialToken)
 
   axios.defaults.withCredentials = true
-  
   return (
     <BrowserRouter>
       <Header toggle={toggle} setToggle={setToggle} token={token} setToken={setToken} />
