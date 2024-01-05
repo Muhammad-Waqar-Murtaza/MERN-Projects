@@ -3,7 +3,7 @@ const cors = require('cors')
 const { connectDB } = require('./database/database')
 const { userRoutes } = require('./routes/userRoutes')
 const { errorHandler } = require("./middlewares/errorMiddleware")
-const corsMiddleware = require('./middlewares/corsMiddleware')
+const { corsMiddleware }= require('./middlewares/corsMiddleware')
 
 const app = express()
 
