@@ -7,20 +7,20 @@ const { errorHandler } = require("./middlewares/errorMiddleware")
 const app = express()
 
 // middleware
-app.use((req,res,next)=>{
-    res.setHeader('Access-Control-Allow-Origin',req.header('Origin'));
-    res.removeHeader('x-powered-by');
-    //allow access to current method
-    res.setHeader('Access-Control-Allow-Methods',req.method);
-    res.setHeader('Access-Control-Allow-Headers','Content-Type');
-    next();
-})
+// app.use((req,res,next)=>{
+//     res.setHeader('Access-Control-Allow-Origin',req.header('Origin'));
+//     res.removeHeader('x-powered-by');
+//     //allow access to current method
+//     res.setHeader('Access-Control-Allow-Methods',req.method);
+//     res.setHeader('Access-Control-Allow-Headers','Content-Type');
+//     next();
+// })
 
-// app.use(cors({
-//     origin: ["https://mern-projects-iota.vercel.app"],
-//     methods: ["POST, GET"],
-//     credentials: true
-// }))
+app.use(cors({
+    origin: ["https://mern-projects-iota.vercel.app"],
+    methods: ["POST, GET"],
+    credentials: true
+}))
 
 app.use(express.json())
 connectDB()
