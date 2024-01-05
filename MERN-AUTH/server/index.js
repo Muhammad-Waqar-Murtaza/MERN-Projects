@@ -5,7 +5,7 @@ const { userRoutes } = require('./routes/userRoutes')
 const { errorHandler } = require("./middlewares/errorMiddleware")
 
 const app = express()
-
+const port = process.env.PORT || 3000
 // middleware
 // app.use((req,res,next)=>{
 //     res.setHeader('Access-Control-Allow-Origin',req.header('Origin'));
@@ -33,6 +33,6 @@ app.use(errorHandler)
 
 // connecting to database
 
-app.listen(3000, async () => {
+app.listen(port, () => {
     console.log("Database & Server connection established")
 })
