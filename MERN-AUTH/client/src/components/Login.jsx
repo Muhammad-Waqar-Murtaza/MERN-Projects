@@ -10,6 +10,7 @@ const Login = ({toggle, setToggle, isAuth, setIsAuth, setToken}) => {
     email: "",
     password: "",
   });
+  axios.defaults.withCredentials = true;
 
   const handleForm = async (e) => {
     e.preventDefault();

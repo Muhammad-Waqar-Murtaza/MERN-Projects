@@ -6,17 +6,14 @@ const { errorHandler } = require("./middlewares/errorMiddleware")
 
 const app = express()
 const port = process.env.PORT || 3000
-// middleware
-// app.use((req,res,next)=>{
-//     res.setHeader('Access-Control-Allow-Origin',req.header('Origin'));
-//     res.removeHeader('x-powered-by');
-//     //allow access to current method
-//     res.setHeader('Access-Control-Allow-Methods',req.method);
-//     res.setHeader('Access-Control-Allow-Headers','Content-Type');
-//     next();
-// })
 
-app.use(cors())
+// middleware
+const corsOptions = {
+    origin: 'https://server-side-fawn-chi.vercel.app/',
+    credentials: true,
+  }
+
+app.use(cors(corsOptions))
 
 app.use(express.json())
 connectDB()

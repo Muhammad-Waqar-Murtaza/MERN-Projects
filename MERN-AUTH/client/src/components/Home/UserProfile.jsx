@@ -11,6 +11,8 @@ const UserProfile = () => {
   }, []);
 
   const token = localStorage.getItem("token");
+
+  axios.defaults.withCredentials = true;
   const profile = async () => {
     const URL = "https://server-side-fawn-chi.vercel.app/user/profile";
     try {

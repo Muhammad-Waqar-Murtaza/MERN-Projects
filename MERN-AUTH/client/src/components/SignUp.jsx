@@ -11,6 +11,8 @@ const SignUp = ({toggle, setToggle}) => {
     password: "",
   });
 
+  axios.defaults.withCredentials = true;
+
   const handleForm = async (e) => {
     e.preventDefault();
     const URL = "https://server-side-fawn-chi.vercel.app/user/signup";

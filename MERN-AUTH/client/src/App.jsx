@@ -6,7 +6,6 @@ import UserProfile from "./components/Home/UserProfile";
 import Header from "./components/Home/Header";
 import { useState } from "react";
 import NotFound from "./components/NotFound";
-import axios from "axios"
 
 function App() {
   const initialToken = localStorage.getItem('token')
